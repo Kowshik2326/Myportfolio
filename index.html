@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Kowshik Kumar Reddy - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">P Kowshik Kumar Reddy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home"><i class="fa fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fa fa-user"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"><i class="fa fa-laptop"></i> Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+                </ul>
+                <button id="dark-mode-toggle" class="btn btn-light">Toggle Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm P Kowshik Kumar Reddy, a Passionate Web Developer.</p>
+            <img src="./Images/WhatsApp Image 2025-01-30 at 12.15.52 AM.jpeg" alt="Your Image" class="rounded-circle" width="200">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div>
+            <h2>About Me</h2>
+            <p class="lead">I am a highly motivated Web Developer with expertise in front-end and back-end technologies.
+                I specialize in JavaScript, React JS, Node JS, and have hands-on experience in building scalable
+                applications. I am always eager to learn new technologies and contribute to innovative projects.</p>
+            <img src="./Images/WhatsApp Image 2025-01-30 at 12.20.09 AM.jpeg" alt="Your Professional Image" class="img-fluid rounded-circle" width="150">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container text-center">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-circle" style="--skill-percent: 90%;">
+                    <img src="./Images/html image.png" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="skill-circle" style="--skill-percent: 85%;">
+                    <img src="./Images/JavaScript-Symbol image.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-circle" style="--skill-percent: 80%;">
+                    <img src="./Images/react image.jpg" alt="React JS">
+                    <span>React JS</span>
+                </div>
+                <div class="skill-circle" style="--skill-percent: 75%;">
+                    <img src="./Images/node image.png" alt="Node JS">
+                    <span>Node JS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container text-center">
+            <h2>My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="./Images/weather image.png" class="card-img-top" alt="Weather App">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather App</h5>
+                            <p class="card-text">A real-time weather application that provides accurate forecasts using
+                                external APIs. Features include location-based weather tracking, temperature analysis,
+                                and detailed reports.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="./Images/bridge image.jpg" class="card-img-top" alt="Bridge Overload Detection">
+                        <div class="card-body">
+                            <h5 class="card-title">Bridge Overload Detection</h5>
+                            <p class="card-text">An IoT-based system that monitors bridge load in real-time to prevent
+                                overloading. Integrated with sensors and an alert mechanism for safety.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="./Images/pharmacy image.jpg" class="card-img-top" alt="Pharmacy Management System">
+                        <div class="card-body">
+                            <h5 class="card-title">Pharmacy Management System</h5>
+                            <p class="card-text">A digital solution for pharmacy owners to manage inventory, track sales,
+                                and automate customer orders efficiently.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div>
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" class="form-control mb-3" placeholder="Your Name" required>
+                <input type="email" id="email" class="form-control mb-3" placeholder="Your Email" required>
+                <textarea id="message" class="form-control mb-3" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="btn btn-light">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social Media Links Section (In Footer after Contact) -->
+    <footer class="bg-dark text-center text-white py-4">
+        <div class="container">
+            <h4>Follow Me on Social Media</h4>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.linkedin.com" class="btn btn-outline-light btn-circle mx-2" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com" class="btn btn-outline-light btn-circle mx-2" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com" class="btn btn-outline-light btn-circle mx-2" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" class="btn btn-outline-light btn-circle mx-2" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
